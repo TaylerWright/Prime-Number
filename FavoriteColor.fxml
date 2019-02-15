@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FavoriteColorController">
+   <children>
+      <Label layoutX="68.0" layoutY="31.0" prefHeight="78.0" prefWidth="435.0" text="What's your favorite color?" />
+      <RadioButton fx:id="RedButton" layoutX="35.0" layoutY="122.0" mnemonicParsing="false" onAction="#RedListner" selected="true" text="Red">
+         <toggleGroup>
+            <ToggleGroup fx:id="colorgroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="BlueButton" layoutX="35.0" layoutY="192.0" mnemonicParsing="false" onAction="#BlueListner" selected="true" text="Blue" toggleGroup="$colorgroup" />
+      <RadioButton fx:id="GreenButton" layoutX="35.0" layoutY="267.0" mnemonicParsing="false" onAction="#GreenListner" selected="true" text="Green " toggleGroup="$colorgroup" />
+      <RadioButton fx:id="YellowButton" layoutX="306.0" layoutY="122.0" mnemonicParsing="false" onAction="#yellowListner" selected="true" text="Yellow" toggleGroup="$colorgroup" />
+      <RadioButton fx:id="PinkButton" layoutX="292.0" layoutY="192.0" mnemonicParsing="false" onAction="#PinkListner" selected="true" text="Pink" toggleGroup="$colorgroup" />
+      <RadioButton fx:id="BlackButtom" layoutX="306.0" layoutY="267.0" mnemonicParsing="false" onAction="#BlackListner" selected="true" text="Black" toggleGroup="$colorgroup" />
+      <Label fx:id="Answerlabel" layoutX="5.0" layoutY="308.0" prefHeight="78.0" prefWidth="588.0" />
+   </children>
+</AnchorPane>
